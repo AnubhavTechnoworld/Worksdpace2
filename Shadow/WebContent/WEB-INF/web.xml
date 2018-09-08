@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Shadow</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+    
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>empServlet</servlet-name>
+  <servlet-class>com.shadow.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>empServlet</servlet-name>
+  <url-pattern>/EmployeeServlet</url-pattern>  
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>SuccessServ</servlet-name>
+  <servlet-class>com.shadow.SuccessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SuccessServ</servlet-name>
+  <url-pattern>/success</url-pattern>  
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>ErrorServ</servlet-name>
+  <servlet-class>com.shadow.ErrorServlet</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ErrorServ</servlet-name>
+  <url-pattern>/error</url-pattern>
+  </servlet-mapping>
+</web-app>
